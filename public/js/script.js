@@ -13,8 +13,16 @@ jQuery('#registermap').vectorMap({
     scaleColors: ['#b6d6ff', '#005ace'],
     selectedColor: '#c9dfaf',
     selectedRegion: 'US',
-    showTooltip: true
+    showTooltip: true,
+    onRegionClick: function(element, code, region)
+    {
+        $('#registerform #contry').val(region) ;
+        
+        $('#registerform').modal() ;
+    }
 });
+
+
 jQuery( document ).ready(function() {
     
     var height = $(window).height() ;

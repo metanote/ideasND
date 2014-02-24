@@ -46,31 +46,53 @@
         </div>
 
         <div class="container">
+            <div id="registermap" style="width: 100%; height: 500px;">
 
-                <div id="registermap" style="width: 100%; height: 500px;">
-
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="registerform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Register Form</h4>
+                        </div>
+                        <div class="modal-body">
+                              <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                              <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                              <input type="text" disabled class="form-control" id="contry" placeholder="contry">
+                              <input type="email" class="form-control" id="email" placeholder="Email">
+                              <input type="url" class="form-control" id="url" placeholder="Website">
+                              <input type="password" class="form-control" id="password" placeholder="password">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
 
-        </div><!-- /.container -->
+    </div><!-- /.container -->
 
 
-        <div class="container">
-            <footer>
-                <p>&copy; IdeasNB <?php echo date('Y'); ?></p>
-            </footer>
-        </div> <!-- /container -->
+    <div class="container">
+        <footer>
+            <p>&copy; IdeasNB <?php echo date('Y'); ?></p>
+        </footer>
+    </div> <!-- /container -->
 
-        <?php echo $this->layout()->content; ?>
-        <!-- Javascript  -->
-        <?php
-        echo $this->headScript()->appendFile('/js/jquery.js')
-                ->appendFile('/js/bootstrap.min.js')
-                //mvg MAPS
-                ->appendFile('/js/jquery.vmap.js')
-                ->appendFile('/js/jquery.vmap.world.js')
-                ->appendFile('/js/jquery.vmap.sampledata.js')
-                ->appendFile('/js/script.js');
-        ?>
-    </body>
+    <?php echo $this->layout()->content; ?>
+    <!-- Javascript  -->
+    <?php
+    echo $this->headScript()->appendFile('/js/jquery.js')
+            ->appendFile('/js/bootstrap.min.js')
+            //mvg MAPS
+            ->appendFile('/js/jquery.vmap.js')
+            ->appendFile('/js/jquery.vmap.world.js')
+            ->appendFile('/js/jquery.vmap.sampledata.js')
+            ->appendFile('/js/script.js');
+    ?>
+</body>
 </html> 
