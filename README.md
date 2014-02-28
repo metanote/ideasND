@@ -1,20 +1,23 @@
 IdeasND
-=======================
-
-Introduction
-------------
-Think together and share ideas
-
-
+======================
 
 Installation
 ------------
 
 Using Git
 
+
+
     git clone git://github.com/yahyaouifaouzi/ideasnd.git
 	
 or  download  zip file  and  copy it  in your  www folder
+
+we use 
+-------
+zend framework 
+MySQL data base 
+PHP5
+js, jQuery, CSS frontend
 
 
 Creation d'un hôte virtuel
